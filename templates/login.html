@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>title</title>
+  <meta name="author" content="Relaxweb">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="keywords,here">
+  <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <style>
+  .mdl-layout {
+    align-items: center;
+    justify-content: center;
+  }
+  .mdl-layout__content {
+    padding: 24px;
+    flex: none;
+  }
+  </style>
+</head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-color--grey-100">
+        <main class="mdl-layout__content">
+          <div class="mdl-card mdl-shadow--6dp">
+            <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+              <h2 class="mdl-card__title-text">Relaxweb</h2>
+            </div>
+            <form method="post">
+              <div class="mdl-card__supporting-text">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="username" name="username" />
+                  <label class="mdl-textfield__label" for="username">Username</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="password" id="userpass" />
+                  <label class="mdl-textfield__label" for="userpass">Password</label>
+                </div>
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <button type="submit" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Log in</button>
+            </div>
+          </form>
+          </div>
+        </main>
+      </div>
+   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+</html>
