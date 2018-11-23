@@ -6,7 +6,7 @@ db = pymysql.connect("localhost", "root", "relaxwebpass108", "tersus")
 app = Flask(__name__, static_url_path='/static')
 
 # Set the secret key to some random bytes. Keep this really secret!
-app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
+app.secret_key = '_5#y2L"F4Q8z\n\xec]/'
 
 # INDEX PAGE
 @app.route('/')

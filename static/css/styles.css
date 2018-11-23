@@ -1,9 +1,34 @@
-html, body {
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+ html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
+
+input, textarea, select, option {
+  font-family: 'Roboto', 'Helvetica', sans-serif !important;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
 .demo-avatar {
-  width: 48px;
-  height: 48px;
+  width: 80px;
+  height: 80px;
   border-radius: 24px;
 }
 .demo-layout .mdl-layout__header .mdl-layout__drawer-button {
@@ -162,7 +187,7 @@ _:-ms-input-placeholder, :root .demo-graph {
 }
 .demo-updates .mdl-card__title {
   min-height: 200px;
-  background-image: url('/images/dog.png');
+  background-image: url('images/dog.png');
   background-position: 90% 100%;
   background-repeat: no-repeat;
 }
