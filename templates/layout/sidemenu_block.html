@@ -1,10 +1,11 @@
 <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
         <header class="demo-drawer-header">
           <!-- <img src="images/default/avatar-7.png" class="demo-avatar"> base_url().$user['profile']['image'] -->
-          <img src="/static/images/default/avatar-7.png" class="demo-avatar clickable" onclick="pageObj.redirect('profile')"> 
+          <img src="/static/{{ data.profile.image }}" class="demo-avatar clickable" onclick="pageObj.redirect('profile')"> 
 
           <div class="demo-avatar-dropdown">
             <span>
+                {{ data.profile.first_name+' '+data.profile.last_name }}
                 <!-- $user['profile']['first_name'] $user['profile']['last_name']  -->
             </span>  
             <!-- json_decode($user['profile'])['first_name'] -->
