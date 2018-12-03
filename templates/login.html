@@ -26,6 +26,7 @@
   </style>
 </head>
 <body>
+  {{ data }}
     <div class="mdl-layout mdl-js-layout mdl-color--grey-100">
         <main class="mdl-layout__content">
           <div class="mdl-card mdl-shadow--6dp">
@@ -35,16 +36,17 @@
             <form method="post">
               <div class="mdl-card__supporting-text">
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                  <input class="mdl-textfield__input" type="text" id="username" name="username" />
-                  <label class="mdl-textfield__label" for="username">Username</label>
+                  <input class="mdl-textfield__input" type="text" id="email" name="email" />
+                  <label class="mdl-textfield__label" for="email">Email</label>
                 </div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                  <input class="mdl-textfield__input" type="password" id="userpass" />
+                  <input class="mdl-textfield__input" type="password" id="userpass" name="userpass" />
                   <label class="mdl-textfield__label" for="userpass">Password</label>
                 </div>
             </div>
             <div class="mdl-card__actions mdl-card--border">
-              <button type="submit" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Log in</button>
+              <button type="submit" name="submit" value="login" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Log in</button>
+              <button type="submit" name="submit" value="register" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Register</button>
             </div>
           </form>
           </div>
